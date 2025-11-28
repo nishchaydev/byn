@@ -20,8 +20,8 @@ interface LineItem {
 
 export function InvoiceGenerator() {
     const [invoiceNumber, setInvoiceNumber] = React.useState("INV-001")
-    const [date, setDate] = React.useState(new Date().toISOString().split('T')[0])
-    const [dueDate, setDueDate] = React.useState(new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0])
+    const [date, setDate] = React.useState(() => new Date().toISOString().split('T')[0])
+    const [dueDate, setDueDate] = React.useState(() => new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0])
 
     const [clientName, setClientName] = React.useState("")
     const [clientCompany, setClientCompany] = React.useState("")

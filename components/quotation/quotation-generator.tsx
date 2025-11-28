@@ -6,7 +6,6 @@ import { Input } from "@/components/ui/input"
 import { Plus, Trash, Download, Printer, Share, Upload, FileText } from "lucide-react"
 import { Logo } from "@/components/ui/logo"
 import { saveAs } from "file-saver"
-import { PDFDocument } from "pdf-lib"
 import { jsPDF } from "jspdf"
 import html2canvas from "html2canvas"
 import QRCode from "qrcode"
@@ -21,8 +20,8 @@ interface LineItem {
 
 export function QuotationGenerator() {
     const [estimationTitle, setEstimationTitle] = React.useState("Website Redesign for Acme Corp")
-    const [validUntil, setValidUntil] = React.useState(new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0])
-    const [date, setDate] = React.useState(new Date().toISOString().split('T')[0])
+    const [validUntil, setValidUntil] = React.useState(() => new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0])
+    const [date, setDate] = React.useState(() => new Date().toISOString().split('T')[0])
 
     const [clientName, setClientName] = React.useState("Jane Smith")
     const [clientCompany, setClientCompany] = React.useState("Acme Corporation")

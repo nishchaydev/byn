@@ -23,7 +23,7 @@ export default function AboutPage() {
                             <div className="space-y-8">
                                 <div>
                                     <h3 className="text-xl font-bold text-byn-teal mb-2">Create.</h3>
-                                    <p className="text-white/60">We don't just design; we create worlds. Every project is an opportunity to push the boundaries of what's possible.</p>
+                                    <p className="text-white/60">We don&apos;t just design; we create worlds. Every project is an opportunity to push the boundaries of what&apos;s possible.</p>
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-byn-pink mb-2">Connect.</h3>
@@ -60,7 +60,7 @@ export default function AboutPage() {
                     <div className="w-full md:w-2/3">
                         <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">The Visionary</h2>
                         <p className="text-white/60 text-lg mb-6 leading-relaxed">
-                            "I started BYN with a simple mission: to kill boring websites. The internet is flooded with templates and cookie-cutter designs. We're here to bring art back to the web, backed by the science of conversion."
+                            &quot;I started BYN with a simple mission: to kill boring websites. The internet is flooded with templates and cookie-cutter designs. We&apos;re here to bring art back to the web, backed by the science of conversion.&quot;
                         </p>
                         <p className="text-white/60 text-lg mb-8 leading-relaxed">
                             With over a decade of experience working with Fortune 500 companies and disruptive startups, Alex leads a team of elite creatives and developers who share a passion for excellence.

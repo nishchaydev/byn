@@ -1,0 +1,138 @@
+
+> byn-website@0.1.0 lint
+> eslint
+
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\app\about\page.tsx
+  26:72   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  26:168  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  63:29   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  63:160  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  63:235  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\app\admin-network-console-byn-2025\login\page.tsx
+  32:18  warning  'err' is defined but never used  @typescript-eslint/no-unused-vars
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\app\admin-network-console-byn-2025\page.tsx
+  13:12  warning  'loading' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  13:21  warning  'setLoading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\app\api\auth\login\route.ts
+  24:14  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\app\api\generate\invoice\route.ts
+  89:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\app\api\generate\quotation\route.ts
+  88:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\app\contact\page.tsx
+  11:50  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\app\page.tsx
+   38:23  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  115:16  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  119:60  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\app\portfolio\page.tsx
+  6:10  warning  'Button' is defined but never used  @typescript-eslint/no-unused-vars
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\app\services\page.tsx
+  109:84   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  109:115  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\CaseCard.tsx
+  17:66  warning  'index' is defined but never used  @typescript-eslint/no-unused-vars
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\Footer.tsx
+  4:10  warning  'motion' is defined but never used  @typescript-eslint/no-unused-vars
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\MeshBackground.tsx
+  17:33  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\MeshBackground.tsx:17:33
+  15 |         const positions = new Float32Array(count * 3);
+  16 |         for (let i = 0; i < count; i++) {
+> 17 |             positions[i * 3] = (Math.random() - 0.5) * 20; // x
+     |                                 ^^^^^^^^^^^^^ Cannot call impure function
+  18 |             positions[i * 3 + 1] = (Math.random() - 0.5) * 20; // y
+  19 |             positions[i * 3 + 2] = (Math.random() - 0.5) * 20; // z
+  20 |         }  react-hooks/purity
+  18:37  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\MeshBackground.tsx:18:37
+  16 |         for (let i = 0; i < count; i++) {
+  17 |             positions[i * 3] = (Math.random() - 0.5) * 20; // x
+> 18 |             positions[i * 3 + 1] = (Math.random() - 0.5) * 20; // y
+     |                                     ^^^^^^^^^^^^^ Cannot call impure function
+  19 |             positions[i * 3 + 2] = (Math.random() - 0.5) * 20; // z
+  20 |         }
+  21 |         return positions;                           react-hooks/purity
+  19:37  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\MeshBackground.tsx:19:37
+  17 |             positions[i * 3] = (Math.random() - 0.5) * 20; // x
+  18 |             positions[i * 3 + 1] = (Math.random() - 0.5) * 20; // y
+> 19 |             positions[i * 3 + 2] = (Math.random() - 0.5) * 20; // z
+     |                                     ^^^^^^^^^^^^^ Cannot call impure function
+  20 |         }
+  21 |         return positions;
+  22 |     }, [count]);                                                    react-hooks/purity
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\NeuralEngine.tsx
+  4:10  warning  'variants' is defined but never used  @typescript-eslint/no-unused-vars
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\invoice\invoice-generator.tsx
+    7:10  warning  'Logo' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+   24:59  error    Error: Cannot call impure function during render
+
+`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\invoice\invoice-generator.tsx:24:59
+  22 |     const [invoiceNumber, setInvoiceNumber] = React.useState("INV-001")
+  23 |     const [date, setDate] = React.useState(new Date().toISOString().split('T')[0])
+> 24 |     const [dueDate, setDueDate] = React.useState(new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0])
+     |                                                           ^^^^^^^^^^ Cannot call impure function
+  25 |
+  26 |     const [clientName, setClientName] = React.useState("")
+  27 |     const [clientCompany, setClientCompany] = React.useState("")  react-hooks/purity
+  403:37  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @next/next/no-img-element
+  544:53  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @next/next/no-img-element
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\layout\navbar.tsx
+  11:7   warning  'navItems' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  19:11  warning  'pathname' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\quotation\quotation-generator.tsx
+    7:10  warning  'Logo' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+    9:10  warning  'PDFDocument' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+   24:65  error    Error: Cannot call impure function during render
+
+`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\quotation\quotation-generator.tsx:24:65
+  22 | export function QuotationGenerator() {
+  23 |     const [estimationTitle, setEstimationTitle] = React.useState("Website Redesign for Acme Corp")
+> 24 |     const [validUntil, setValidUntil] = React.useState(new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0])
+     |                                                                 ^^^^^^^^^^ Cannot call impure function
+  25 |     const [date, setDate] = React.useState(new Date().toISOString().split('T')[0])
+  26 |
+  27 |     const [clientName, setClientName] = React.useState("Jane Smith")  react-hooks/purity
+   25:18  warning  'setDate' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+  422:37  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @next/next/no-img-element
+  561:53  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @next/next/no-img-element
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\ui\input.tsx
+  4:18  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+N:\PROGRAMS\GIT and GITHUB\github Desktop\New folder\byn-website\components\ui\lightbox.tsx
+  49:8  warning  React Hook React.useEffect has missing dependencies: 'nextImage' and 'prevImage'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+✖ 38 problems (17 errors, 21 warnings)
+

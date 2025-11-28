@@ -16,7 +16,6 @@ const navItems = [
 ]
 
 export function Navbar() {
-    const pathname = usePathname()
     const [isScrolled, setIsScrolled] = React.useState(false)
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
 

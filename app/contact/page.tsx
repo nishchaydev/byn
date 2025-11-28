@@ -8,7 +8,7 @@ export default function ContactPage() {
                     START YOUR <span className="text-byn-teal">PROJECT.</span>
                 </h1>
                 <p className="text-xl text-white/60 max-w-2xl mx-auto">
-                    Tell us about your vision. We'll help you build it.
+                    Tell us about your vision. We&apos;ll help you build it.
                 </p>
             </section>
 
