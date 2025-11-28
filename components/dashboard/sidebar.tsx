@@ -37,13 +37,14 @@ export function DashboardSidebar() {
                 {sidebarItems.map((item) => {
                     const Icon = item.icon
                     const isActive = pathname === item.href
+                    const isUnderDev = ["Proposals", "Clients"].includes(item.name)
 
                     return (
                         <Link
                             key={item.href}
                             href={item.href}
                             className={cn(
-                                "flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200",
+                                "flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 group relative",
                                 isActive
                                     ? "bg-byn-teal/10 text-byn-teal font-bold"
                                     : "text-white/60 hover:bg-white/5 hover:text-white"
@@ -51,6 +52,11 @@ export function DashboardSidebar() {
                         >
                             <Icon size={20} />
                             <span className="text-sm">{item.name}</span>
+                            {isUnderDev && (
+                                <span className="absolute right-2 opacity-0 group-hover:opacity-100 transition-opacity bg-byn-gold text-black text-[10px] font-bold px-1.5 py-0.5 rounded">
+                                    SOON
+                                </span>
+                            )}
                         </Link>
                     )
                 })}

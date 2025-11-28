@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   description: "Premium website theme & component system for BYN.",
 };
 
+import { DevelopmentBadge } from "@/components/ui/development-badge";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,6 +36,7 @@ export default function RootLayout({
         <main className="min-h-screen pt-20">
           {children}
         </main>
+        <DevelopmentBadge />
         <Footer />
       </body>
     </html>
